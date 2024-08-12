@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            background-color: #001f3f; /* Navy Blue Background */
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            flex-direction: column;
+            position: relative;
+        }
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            animation: fadeInDown 2s ease-in-out, pulse 1.5s infinite;
+            z-index: 10;
+        }
+        p {
+            font-size: 2em;
+            margin-top: 20px;
+            color: #ffcc00;
+            animation: fadeInUp 2.5s ease-in-out, pulse 1.5s infinite;
+            z-index: 10;
+            line-height: 1.5em;
+        }
+        .back-button, .gallery-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffcc00; /* Yellow Button */
+            color: #001f3f;
+            text-decoration: none;
+            font-size: 1.5em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover, .gallery-button:hover {
+            background-color: #ffd700;
+        }
+        .hearts {
+            position: absolute;
+            bottom: -100px;
+            width: 50px;
+            height: 50px;
+            background-color: #ffcc00;
+            clip-path: polygon(50% 0%, 0% 30%, 50% 100%, 100% 30%);
+            animation: floatUp 7s ease-in-out infinite;
+            z-index: 5;
+        }
+
+        .hearts:nth-child(2) {
+            left: 20%;
+            animation-duration: 6s;
+        }
+
+        .hearts:nth-child(3) {
+            left: 40%;
+            animation-duration: 8s;
+        }
+
+        .hearts:nth-child(4) {
+            left: 60%;
+            animation-duration: 7s;
+        }
+
+        .hearts:nth-child(5) {
+            left: 80%;
+            animation-duration: 6.5s;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0);
+                opacity: 0.7;
+            }
+            50% {
+                transform: translateY(-20px);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Thank You for Being in My Life</h1>
+    <p>
+        You've brought a light into my life I never knew I needed. <br>
+        Every time I see you, my heart skips a beat. <br>
+        I'm so grateful to have you in my life, <br>
+        and I cherish every moment we share. <br>
+        You mean the world to me, and I love you more than I can say.
+    </p>
+  
+    <a href="gallery.html" class="gallery-button">View Our Memories</a>
+
+    <div class="hearts"></div>
+    <div class="hearts"></div>
+    <div class="hearts"></div>
+    <div class="hearts"></div>
+    <div class="hearts"></div>
+</body>
+</html>
