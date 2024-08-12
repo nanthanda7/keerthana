@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories</title>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #001f3f; /* Navy Blue Background */
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .gallery img, .gallery video {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover, .gallery video:hover {
+            transform: scale(1.05);
+        }
+        .back-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ffcc00; /* Yellow Button */
+            color: #001f3f;
+            text-decoration: none;
+            font-size: 1.5em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .back-button:hover {
+            background-color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Beautiful Memories</h1>
+    <div class="gallery">
+        <img src="image\1.jpg" alt="Memory 1">
+        <img src="image\2.jpg" alt="Memory 2">
+        <img src="image\3.jpg" alt="Memory 3">
+        <img src="image\4.jpg" alt="Memory 4">
+        <img src="image\5.jpg" alt="Memory 5">
+        <img src="image\6.jpg" alt="Memory 6">
+        <img src="image\7.jpg" alt="Memory 7">
+        <img src="image\8.jpg" alt="Memory 8">
+        <video controls>
+            <source src="image/eyes.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="image/symp.mp4" type="video/mp4">
+            </video>
+            <video controls>
+                <source src="image/hack.mp4" type="video/mp4">
+            </video>
+            <video controls>
+            <source src="image/ha.mp4" type="video/mp4">
+            
+        </video>
+    </div>
+    <br>
+    <br>
+    <br>
+
+    <a href="birthday.html" class="back-button">Happy Birthday</a>
+</body>
+</html>
